@@ -299,9 +299,6 @@ function displayForm() {
 // Add event listener
 document.getElementById("submit-btn").addEventListener("click", submitScore);
 
-
-// var scoreCounter = 1;
-
 // Load high scores from local storage when the page loads
 var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
@@ -338,7 +335,7 @@ function submitScore() {
 function showScores() {
     event.preventDefault();
 
-    // prevent any other container from appearing that is not the score section 
+    // Prevent any other container from appearing that is not the score section 
     document.getElementById('form-container').style.display = 'none';
     document.getElementById('start').style.display = 'none';
     document.getElementById('quiz-container').style.display = 'none';
